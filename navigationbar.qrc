@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/item">
+        <file>resources/icon/edit.png</file>
+        <file>resources/icon/welcome.png</file>
+        <file>resources/icon/setting.png</file>
+        <file>resources/icon/optimize.png</file>
+        <file>resources/icon/navhelp.png</file>
+        <file>resources/icon/performance.png</file>
+    </qresource>
+</RCC>

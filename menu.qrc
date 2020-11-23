@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>resources/icon/logo.png</file>
+    </qresource>
+    <qresource prefix="/file">
+        <file>resources/icon/export.ico</file>
+        <file>resources/icon/import.ico</file>
+        <file>resources/icon/new.ico</file>
+        <file>resources/icon/open.ico</file>
+        <file>resources/icon/save as.ico</file>
+        <file>resources/icon/save.ico</file>
+        <file>resources/icon/search.ico</file>
+        <file>resources/icon/close.ico</file>
+        <file>resources/icon/quit.png</file>
+    </qresource>
+    <qresource prefix="/help">
+        <file>resources/icon/about.png</file>
+        <file>resources/icon/help.png</file>
+    </qresource>
+    <qresource prefix="/simulation">
+        <file>resources/icon/start up.png</file>
+        <file>resources/icon/stop.png</file>
+        <file>resources/icon/suspended.png</file>
+    </qresource>
+    <qresource prefix="/edit">
+        <file>resources/icon/redo.png</file>
+        <file>resources/icon/undo.png</file>
+    </qresource>
+</RCC>
