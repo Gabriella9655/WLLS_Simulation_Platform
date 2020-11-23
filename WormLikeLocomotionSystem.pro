@@ -16,15 +16,33 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    View/helppage.cpp \
+    View/optimizepage.cpp \
+    View/performancepage.cpp \
+    View/scenepage.cpp \
+    View/settingpage.cpp \
+    View/welcomepage.cpp \
     main.cpp \
     mainwindow.cpp \
     model/fangmsd.cpp
 
 HEADERS += \
+    View/helppage.h \
+    View/optimizepage.h \
+    View/performancepage.h \
+    View/scenepage.h \
+    View/settingpage.h \
+    View/welcomepage.h \
     mainwindow.h \
     model/fangmsd.h
 
 FORMS += \
+    View/helppage.ui \
+    View/optimizepage.ui \
+    View/performancepage.ui \
+    View/scenepage.ui \
+    View/settingpage.ui \
+    View/welcomepage.ui \
     mainwindow.ui
 
 # Default rules for deployment.

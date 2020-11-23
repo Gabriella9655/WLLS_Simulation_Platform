@@ -5,6 +5,13 @@
 #include <QLabel>
 #include <QListWidget>
 #include <QStackedWidget>
+#include <QProgressBar>
+#include "View/welcomepage.h"
+#include "View/scenepage.h"
+#include "View/performancepage.h"
+#include "View/optimizepage.h"
+#include "View/settingpage.h"
+#include "View/helppage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,24 +30,27 @@ public:
 private:
     Ui::MainWindow *ui;
     // 顶部菜单栏
-    QMenuBar* pMenuBar;
-    QMenu* pFileMenu;
-    QMenu* pEditMenu;
-    QMenu* pAddMenu;
-    QMenu* pSimulationMenu;
-    QMenu* pToolsMenu;
-    QMenu* pPluginsMenu;
-    QMenu* pHelpMenu;
 
     // 组件
-    QStackedWidget* pStackedWidget;
+
 
     // 左侧功能栏
-    QListWidget* pNavigationBar;
+
+    // stackedwidget
+    WelcomePage* pWelcomePage;
+    ScenePage* pScenePage;
+    PerformancePage* pPerformancePage;
+    OptimizePage* pOptimizePage;
+    SettingPage* pSettingPage;
+    HelpPage* pHelpPage;
+
+
 
     // 底部状态栏
-    QStatusBar* pStatusBar;
     QLabel* pStatusNormalLabel;
     QLabel* pStatusPermanentLabel;
+    QProgressBar *pStatusProgressBar;
+
+    void initUI();  // initialize th graphic user interface
 };
 #endif // MAINWINDOW_H

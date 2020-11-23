@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1200</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -18,21 +18,67 @@
   </property>
   <property name="font">
    <font>
-    <family>Adobe Devanagari</family>
+    <family>微软雅黑</family>
+    <pointsize>10</pointsize>
    </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QListWidget" name="navWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>61</width>
-      <height>541</height>
+      <width>60</width>
+      <height>840</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="flow">
+     <enum>QListView::TopToBottom</enum>
+    </property>
+    <property name="isWrapping" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="resizeMode">
+     <enum>QListView::Fixed</enum>
+    </property>
+    <property name="layoutMode">
+     <enum>QListView::SinglePass</enum>
+    </property>
+    <property name="spacing">
+     <number>7</number>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::IconMode</enum>
+    </property>
+    <property name="uniformItemSizes">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
     </property>
     <item>
      <property name="text">
@@ -98,17 +144,36 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>0</y>
-      <width>721</width>
-      <height>531</height>
+      <width>1140</width>
+      <height>840</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>0</number>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
-    <widget class="QWidget" name="page"/>
-    <widget class="QWidget" name="page_2"/>
+    <property name="minimumSize">
+     <size>
+      <width>340</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -116,11 +181,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>26</height>
+     <width>1200</width>
+     <height>29</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="fileMeu">
     <property name="title">
      <string>File</string>
     </property>
@@ -134,19 +199,19 @@
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
-   <widget class="QMenu" name="menu_2">
+   <widget class="QMenu" name="editMenu">
     <property name="title">
      <string>Edit</string>
     </property>
     <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
    </widget>
-   <widget class="QMenu" name="menu_3">
+   <widget class="QMenu" name="addMenu">
     <property name="title">
      <string>Add</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menu_4">
+   <widget class="QMenu" name="simulationMenu">
     <property name="title">
      <string>Simulation</string>
     </property>
@@ -154,30 +219,30 @@
     <addaction name="actionSuspend"/>
     <addaction name="actionStop"/>
    </widget>
-   <widget class="QMenu" name="menu_5">
+   <widget class="QMenu" name="toolsMenu">
     <property name="title">
      <string>Tools</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menu_6">
+   <widget class="QMenu" name="pluginsMenu">
     <property name="title">
      <string>Plugins</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menu_7">
+   <widget class="QMenu" name="helpMenu">
     <property name="title">
      <string>Help</string>
     </property>
     <addaction name="actionHelp_Topics"/>
     <addaction name="actionAbout_Us"/>
    </widget>
-   <addaction name="menu"/>
-   <addaction name="menu_2"/>
-   <addaction name="menu_3"/>
-   <addaction name="menu_4"/>
-   <addaction name="menu_5"/>
-   <addaction name="menu_6"/>
-   <addaction name="menu_7"/>
+   <addaction name="fileMeu"/>
+   <addaction name="editMenu"/>
+   <addaction name="addMenu"/>
+   <addaction name="simulationMenu"/>
+   <addaction name="toolsMenu"/>
+   <addaction name="pluginsMenu"/>
+   <addaction name="helpMenu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNew">
